@@ -59,5 +59,7 @@ class AddAccountRepostiry {
   }
 }
 
-
 ```
+> ## StatusCode
+401 = Unauthorized, mas não sabe quem é o usuário, não foi encontrado na base. 
+403 = Unauthorized, porém sabe quem é o usuário, por exemplo um usuário logado X, que tenta fazer acesso a funções de um Admin por exemplo, ele não tem permissão para fazer aquela ação.
