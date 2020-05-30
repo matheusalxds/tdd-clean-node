@@ -17,16 +17,6 @@
     "url": "https://github.com/matheusalxds/tdd-clean-node/issues"
   },
   "homepage": "https://github.com/matheusalxds/tdd-clean-node#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "standard --fix"
-    ]
-  },
   "devDependencies": {
     "husky": "^4.2.5",
     "jest": "^26.0.1",
