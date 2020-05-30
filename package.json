@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/matheusalxds/tdd-clean-node/issues"
   },
-  "homepage": "https://github.com/matheusalxds/tdd-clean-node#readme"
+  "homepage": "https://github.com/matheusalxds/tdd-clean-node#readme",
+  "lint-staged": {
+    "*.js": ["standard"]
+  },
+  "devDependencies": {
+    "lint-staged": "^10.2.7",
+    "standard": "^14.3.4"
+  }
 }
