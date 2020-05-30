@@ -17,10 +17,17 @@
     "url": "https://github.com/matheusalxds/tdd-clean-node/issues"
   },
   "homepage": "https://github.com/matheusalxds/tdd-clean-node#readme",
+  "standard": {
+    "env": ["jest"]
+  },
   "devDependencies": {
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lint-staged": "^10.2.7",
     "standard": "^14.3.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
   }
 }
