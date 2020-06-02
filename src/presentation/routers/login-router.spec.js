@@ -143,7 +143,6 @@ describe('Login Router', () => {
       }
     }
     const httpResponse = await sut.route(httpRequest)
-    console.log('httpResponse', httpResponse)
     expect(httpResponse.statusCode).toBe(200)
     expect(httpResponse.body.accessToken).toEqual(authUseCaseSpy.accessToken)
   })
