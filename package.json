@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/matheusalxds/tdd-clean-node#readme",
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "devDependencies": {
     "husky": "^4.2.5",
@@ -32,6 +34,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.9.16"
+    "mongoose": "^5.9.16",
+    "validator": "^13.0.0"
   }
 }
