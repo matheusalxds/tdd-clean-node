@@ -63,3 +63,6 @@ class AddAccountRepostiry {
 > ## StatusCode
 401 = Unauthorized, mas não sabe quem é o usuário, não foi encontrado na base. 
 403 = Unauthorized, porém sabe quem é o usuário, por exemplo um usuário logado X, que tenta fazer acesso a funções de um Admin por exemplo, ele não tem permissão para fazer aquela ação.
+
+> ## Main layer
+As variáveis de ambiente deveriam ficar dentro da layer Main, porém nenhuma das outras layers deveria acessar o Main layer e sim ao contrário, apenas o Main acessa as outras Layers, então para conseguir utilizar utilizar uma variável de ambiente dentro de qualquer outra layer, seria através de Dependency Injection. Então no nosso Main Layer quando formos utilizar o Token Generator por exemplo, ai sim podemos utilizar as variáveis de ambiente e não acessar diretamente o valor dentro da classe do Token Generator.
