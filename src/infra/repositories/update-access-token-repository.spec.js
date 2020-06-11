@@ -2,7 +2,7 @@ const MongoHelper = require('../helpers/mongo-helper')
 const MissingParamError = require('../../utils/errors/missing-param-error')
 const UpdateAccessTokenRepository = require('./update-access-token-repository')
 
-let userModel
+let fakeUserId, userModel
 
 const createFakeUser = async (_userModel) => {
   const fakeUser = await _userModel.insertOne({
@@ -21,8 +21,6 @@ const makeSut = () => {
 }
 
 describe('UploadAccessToken Repository', () => {
-  let fakeUserId
-
   beforeAll(async () => {
     await MongoHelper.connect(process.env.MONGO_URL)
     userModel = await MongoHelper.getCollection('users')
