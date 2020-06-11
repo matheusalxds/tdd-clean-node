@@ -11,9 +11,8 @@ module.exports = class UpdateAccessTokenRepository {
       throw new MissingParamError('accessToken')
     }
 
-    const db = await MongoHelper.getDb()
-
-    await db.collection('users').updateOne(
+    const userModel = await MongoHelper.getCollection('users')
+    await userModel.updateOne(
       { _id: userId },
       {
         $set: {
